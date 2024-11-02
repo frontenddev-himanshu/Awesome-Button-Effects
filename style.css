@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(Scr/Sky.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* button-wrap */
+.btn-wrap {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.17);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* buttons */
+.btn-wrap button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* btns hovers */
+
+/* btn -1 */
+.btn-1:hover {
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+/* btn-2 */
+.btn-2::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: -50%;
+    position: absolute;
+    background: #ff96ad;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+
+.btn-2:hover::after {
+    right: 0;
+}
+
+.btn-2::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background-color: #ff96ad;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.btn-2:hover::before {
+    left: 0;
+}
+
+/* btn-3 */
+
+.btn-3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.btn-3:hover::after {
+    height: 100%;
+    background: #ff96ad;
+}
+
+/* btn-4 */
+
+.btn-4::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background: #ff96ad;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.btn-4:hover::after {
+    height: 100%;
+}
+
+/* btn-5 */
+
+.btn-5:hover {
+    box-shadow: 6px 6px 0px #ff96ad;
+    top: -2px;
+    left: -2px;
+}
+
+/* btn-6 */
+
+.btn-6::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 0;
+    transform: skew(50deg);
+    transform-origin: top left;
+    left: -35%;
+    top: 0;
+    background: #ff96ad;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.btn-6:hover::after {
+    height: 100%;
+    width: 135%;
+}
+
+
+/* btn-7 */
+
+.btn-7::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    background: #ff96ad;
+    z-index: -1;
+}
+
+.btn-7:hover::after {
+    width: 100%;
+}
+
+/* btn-8 */
+
+.btn-8:hover {
+    outline: 2px solid #ff96ad;
+    color: #ff96ad;
+    background-color: #17181c67;
+}
